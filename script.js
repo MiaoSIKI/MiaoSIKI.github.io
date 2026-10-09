@@ -1,5 +1,6 @@
 const translations = {
   zh: {
+    focusLabel: '— 研究与开发', focusTitle: '研究方向 / 技术栈', focusResearch: '研究方向', focusResearchBody: '芯片物理设计：布局与优化。', focusDevelopment: '软件开发', focusDevelopmentBody: '研究复现、系统实验与 Web 小工具。',
     pageTitle: 'MiaoSIKI — 芯片、软件与日常', skip: '跳到正文', menu: '菜单', navPortfolio: '作品集', navPoetry: '诗作', navWatching: '追番', navMusic: '音乐', navContact: '联系',
     heroKicker: '— 作品集 / 2026', heroTitle: 'MiaoSIKI.<br /><em>物理设计</em><br />遇见有温度的软件。', heroBody: '我游走在算法与界面之间——复现布局研究、探索系统，也做让复杂事物变得直接的 Web 体验。',
     statusLabel: '— 状态', statusPill: 'CUHKSZ · 2026 年 10 月', statusTitle: '研究系统如何找到它的<em>形状</em>——从芯片布局到交互界面。', organization: '组织', focus: '方向', focusValue: '物理设计', stackFact: '技术栈',
@@ -16,6 +17,7 @@ const translations = {
     contactLabel: '— 联系', contactTitle: '一起探索一件<em>值得理解的事。</em>', contactBody: '带来一篇论文、一个实现细节，或一个越看越有意思的问题。', openGithub: '打开 GitHub →', crafted: '认真制作'
   },
   en: {
+    focusLabel: '— Research & development', focusTitle: 'Research / Software', focusResearch: 'Research', focusResearchBody: 'Chip physical design: placement and optimization.', focusDevelopment: 'Software', focusDevelopmentBody: 'Research reproductions, systems experiments, and small web tools.',
     pageTitle: 'MiaoSIKI — Silicon, software & everyday life', skip: 'Skip to content', menu: 'Menu', navPortfolio: 'portfolio', navPoetry: 'poetry', navWatching: 'watching', navMusic: 'music', navContact: 'contact',
     heroKicker: '— Portfolio / 2026', heroTitle: 'MiaoSIKI.<br /><em>Physical design</em><br />meets thoughtful software.', heroBody: 'I work between algorithms and interfaces — reproducing placement research, exploring systems, and building web experiences that make complex things feel direct.',
     statusLabel: '— Status', statusPill: 'CUHKSZ · October 2026', statusTitle: 'Studying how systems find their <em>shape</em> — from chip placement to interfaces.', organization: 'Organization', focus: 'Focus', focusValue: 'Physical design', stackFact: 'Stack',
