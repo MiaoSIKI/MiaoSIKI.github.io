@@ -1,18 +1,173 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <style media="screen">
-            * {
-                margin: 0;
-                padding: 0;
-            }
-        </style>
-    </head>
-    <body>
-    </body>
-    <script type="text/javascript">
-        window.location.href="https://www.cnblogs.com/miaosiki";　 // 将这个地址修改成需要的博客地址
-    </script>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171716" />
+    <meta name="description" content="MiaoSIKI — physical design, systems, writing, anime, and music." />
+    <title>MiaoSIKI — 芯片、软件与日常</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="content.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="MiaoSIKI, back to top"><span class="live-dot" aria-hidden="true"></span>miaosiki.top</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span data-i18n="menu">菜单</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#top" data-i18n="navPortfolio">作品集</a>
+        <a href="#poetry" data-i18n="navPoetry">诗作</a>
+        <a href="#watching" data-i18n="navWatching">追番</a>
+        <a href="#music" data-i18n="navMusic">音乐</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+        <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch to English">EN</button>
+        <a class="terminal-jump" href="#terminal" aria-label="Jump to terminal card">&gt;_</a>
+      </nav>
+    </header>
+
+    <main class="portfolio-grid" id="main">
+      <section class="panel hero" id="top" aria-labelledby="hero-title">
+        <div class="panel-head"><span data-i18n="heroKicker">— 作品集 / 2026</span><span>Index · 01</span></div>
+        <div class="hero-copy">
+          <h1 id="hero-title" data-i18n-html="heroTitle">MiaoSIKI.<br /><em>物理设计</em><br />遇见有温度的软件。</h1>
+          <p data-i18n="heroBody">我游走在算法与界面之间——复现布局研究、探索系统，也做让复杂事物变得直接的 Web 体验。</p>
+        </div>
+      </section>
+
+      <section class="panel status" aria-labelledby="status-title">
+        <div class="panel-head"><span data-i18n="statusLabel">— 状态</span></div>
+        <div class="status-pill"><span class="online-dot"></span><span data-i18n="statusPill">CUHKSZ · 2026 年 10 月</span></div>
+        <h2 id="status-title" data-i18n-html="statusTitle">研究系统如何找到它的<em>形状</em>——从芯片布局到交互界面。</h2>
+        <dl class="micro-facts">
+          <div><dt data-i18n="organization">组织</dt><dd>CUHKSZ</dd></div>
+          <div><dt data-i18n="focus">方向</dt><dd data-i18n="focusValue">物理设计</dd></div>
+          <div><dt data-i18n="stackFact">技术栈</dt><dd>C++ · TS · Vue</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel about" id="about" aria-labelledby="about-title">
+        <div class="panel-head"><span data-i18n="aboutLabel">— 关于</span></div>
+        <h2 class="visually-hidden" id="about-title" data-i18n="aboutTitle">关于 MiaoSIKI</h2>
+        <p data-i18n-html="aboutP1">我在意那些接缝——<strong>论文如何变成代码，优化如何变成版图，系统又如何变得可以理解。</strong></p>
+        <p data-i18n="aboutP2">最近在做 EDA 相关的研究复现，也写一些 Web 小工具。</p>
+      </section>
+
+      <section class="panel stack" id="stack" aria-labelledby="stack-title">
+        <div class="panel-head"><span data-i18n="stackLabel">— 技术栈</span></div>
+        <h2 class="visually-hidden" id="stack-title" data-i18n="stackTitle">技术栈</h2>
+        <div class="stack-row"><span data-i18n="languages">语言</span><div><b>C++</b><b>TypeScript</b><b>JavaScript</b><b>Verilog</b></div></div>
+        <div class="stack-row"><span data-i18n="physicalDesign">物理设计</span><div><b data-i18n="placement">布局</b><b data-i18n="optimization">优化</b><b data-i18n="reproduction">复现</b></div></div>
+        <div class="stack-row"><span data-i18n="frontend">前端</span><div><b>Vue</b><b>HTML</b><b>CSS</b></div></div>
+        <div class="stack-row"><span data-i18n="systems">系统</span><div><b>Node.js</b><b>Web APIs</b><b>Linux</b></div></div>
+        <div class="stack-row"><span data-i18n="tools">工具</span><div><b>Git</b><b>GitHub</b><b>Gridea</b></div></div>
+      </section>
+
+      <section class="panel metrics" aria-labelledby="metrics-title">
+        <div class="panel-head"><span data-i18n="metricsLabel">— 索引数字</span></div>
+        <h2 class="visually-hidden" id="metrics-title" data-i18n="metricsTitle">作品集数字</h2>
+        <div class="metric-grid">
+          <div><strong>09</strong><small data-i18n="publicRepos">公开仓库</small></div>
+          <div><strong><span data-project-total>04</span><sup>*</sup></strong><small data-i18n="selectedThreads">精选项目</small></div>
+          <div><strong>03<sup>+</sup></strong><small data-i18n="coreLanguages">核心语言</small></div>
+          <div><strong>01<sup>live</sup></strong><small data-i18n="livingPortfolio">持续更新的主页</small></div>
+        </div>
+      </section>
+
+      <section class="panel work" id="work" aria-labelledby="work-title">
+        <div class="panel-head"><span data-i18n="workLabel">— 精选作品</span><span data-project-count>04 个项目</span></div>
+        <h2 class="visually-hidden" id="work-title" data-i18n="workTitle">精选作品</h2>
+        <div class="project-list" data-project-list></div>
+        <a class="button-link" href="https://github.com/MiaoSIKI?tab=repositories" target="_blank" rel="noreferrer" data-i18n="viewRepos">查看全部仓库 →</a>
+      </section>
+
+      <section class="panel activity" id="activity" aria-labelledby="activity-title">
+        <div class="panel-head"><span data-i18n="activityLabel">— 动态</span><span>GitHub</span></div>
+        <div class="activity-title"><h2 id="activity-title">09</h2><span data-i18n="publicRepos">公开仓库</span></div>
+        <div class="repo-map" data-repo-map aria-label="Decorative repository activity map"></div>
+        <div class="map-axis"><span data-i18n="older">较早</span><span data-i18n="mapNote">仓库地图 · 非贡献次数</span><span data-i18n="recent">最近</span></div>
+        <div class="repo-columns">
+          <div><h3 data-i18n="originalThread">原创项目</h3><a href="https://github.com/MiaoSIKI/YesPlayMusic-listen-together-support" target="_blank" rel="noreferrer"><span><i class="repo-dot red"></i>YesPlayMusic listen together<small data-i18n="musicProjectShort">Vue · 多人一起听</small></span><b>★ 1 · fork 1</b></a><a href="https://github.com/MiaoSIKI/MiaoSIKI.github.io" target="_blank" rel="noreferrer"><span><i class="repo-dot blue"></i>MiaoSIKI.github.io<small data-i18n="thisPortfolio">这个个人主页</small></span><b>HTML</b></a></div>
+          <div><h3 data-i18n="recentlyActive">最近活跃</h3><a href="https://github.com/MiaoSIKI/BTAssign-R-reproduction" target="_blank" rel="noreferrer"><span><i class="repo-dot yellow"></i>BTAssign-R reproduction<small data-i18n="physicalStudy">物理设计研究</small></span><b>C++</b></a><a href="https://github.com/MiaoSIKI/CyberBrain" target="_blank" rel="noreferrer"><span><i class="repo-dot blue"></i>CyberBrain<small data-i18n="tsExperiment">TypeScript 实验</small></span><b>TypeScript</b></a></div>
+        </div>
+      </section>
+
+      <section class="panel timeline" aria-labelledby="timeline-title">
+        <div class="panel-head"><span data-i18n="logLabel">— 项目日志</span></div>
+        <h2 class="visually-hidden" id="timeline-title" data-i18n="logTitle">近期项目日志</h2>
+        <div class="timeline-item active"><time data-i18n="oct2026">2026 年 10 月</time><strong>BTAssign-R reproduction</strong><p data-i18n="log1">围绕物理设计分配问题进行复现。</p></div>
+        <div class="timeline-item"><time data-i18n="sep2026">2026 年 9 月</time><strong>CyberBrain</strong><p data-i18n="log2">持续中的 TypeScript 实验。</p></div>
+        <div class="timeline-item"><time data-i18n="aug2026">2026 年 8 月</time><strong>Listen Together Support</strong><p data-i18n="log3">为 YesPlayMusic 实现协同听歌。</p></div>
+      </section>
+
+      <section class="panel terminal" id="terminal" aria-labelledby="terminal-title">
+        <div class="terminal-bar"><span><i></i><i></i><i></i></span><span>miaosiki@dev ~ /portfolio</span></div>
+        <h2 class="visually-hidden" id="terminal-title">Terminal profile</h2>
+        <div class="terminal-body"><p><b>miaosiki@dev</b> ~/portfolio $ whoami --verbose</p><p data-i18n-html="terminalWho">→ MiaoSIKI — 在芯片与软件之间构建<br />→ 组织：CUHKSZ</p><p><b>miaosiki@dev</b> ~/portfolio $ cat interests.json</p><pre>{
+  "physical_design": ["placement", "optimization"],
+  "software": ["C++", "TypeScript", "Vue"],
+  "mode": "learning in public"
+}</pre><p><b>miaosiki@dev</b> ~/portfolio $ <span class="cursor">_</span></p></div>
+      </section>
+
+      <section class="panel affiliation" aria-labelledby="affiliation-title">
+        <div class="panel-head"><span data-i18n="academicLabel">— 学术</span><span data-i18n="currentPath">当前路径</span></div>
+        <div class="affiliation-card"><time data-i18n="current">当前</time><div><h2 id="affiliation-title">CUHKSZ</h2><span class="tags"><i>EDA</i><i>Algorithms</i><i>Systems</i><i>Interfaces</i></span></div><b class="state-pill" data-i18n="active">进行中</b></div>
+      </section>
+
+      <section class="panel poetry" id="poetry" aria-labelledby="poetry-title">
+        <div class="poetry-intro"><div class="panel-head"><span data-i18n="poetryLabel">— 诗作</span><span>Words / 诗</span></div><h2 id="poetry-title" data-i18n-html="poetryTitle">把不能编译的部分，<em>写成诗。</em></h2><p data-i18n="poetryBody">这里收录了 20 首原创诗作，首页随机选出一组。点开标题可以阅读全文。</p><div class="poetry-controls"><button type="button" data-poem-shuffle>换一组诗作 ↻</button><span data-poem-count>6 / 20</span></div></div>
+        <div class="poem-grid" data-poem-grid></div>
+      </section>
+
+      <dialog class="poem-dialog" data-poem-dialog>
+        <article>
+          <button class="poem-close" type="button" data-poem-close aria-label="Close poem">×</button>
+          <time data-poem-date></time>
+          <h2 data-poem-title></h2>
+          <div class="poem-body" data-poem-body></div>
+        </article>
+      </dialog>
+
+      <section class="panel watching" id="watching" aria-labelledby="watching-title">
+        <div class="panel-head"><span data-i18n="watchingLabel">— 最近追番</span><span>Now / 现在</span></div>
+        <div class="watching-visual" aria-hidden="true"><span>見</span></div>
+        <h2 id="watching-title" data-i18n="watchingTitle">最近看的动画</h2>
+        <p data-i18n="watchingBody">片单还没整理好。</p>
+        <div class="watch-states" data-anime-list></div>
+      </section>
+
+      <section class="panel music" id="music" aria-labelledby="music-title">
+        <div class="vinyl" aria-hidden="true"><span></span></div>
+        <div class="music-copy">
+          <div class="panel-head"><span data-i18n="musicLabel">— 音乐推荐</span><span>NetEase Cloud Music</span></div>
+          <p class="music-overline" data-playlist-name>来自我的网易云歌单</p>
+          <h2 id="music-title" data-music-title>最近循环的声音，<br /><em>留在这里。</em></h2>
+          <p data-music-description>从歌单里挑出的近期推荐。</p>
+          <div class="site-audio-player" data-audio-player>
+            <div class="audio-now">
+              <span data-audio-label>当前播放</span>
+              <strong data-audio-title>选择一首歌</strong>
+              <small data-audio-artist>点击下方歌名即可在此播放</small>
+            </div>
+            <audio data-audio controls preload="metadata" hidden></audio>
+            <p class="audio-status" data-audio-status role="status" aria-live="polite">播放器已就绪</p>
+          </div>
+          <label class="track-filter"><span data-track-filter-label>筛选歌曲</span><input type="search" data-track-filter autocomplete="off" placeholder="输入歌名或歌手" /></label>
+          <div class="track-list" data-track-list></div>
+          <div class="music-actions"><a class="button-link" data-playlist-link href="https://music.163.com/" target="_blank" rel="noreferrer">打开网易云音乐 →</a><span data-playlist-status>需要公开歌单分享链接</span></div>
+        </div>
+      </section>
+
+      <section class="panel contact" id="contact" aria-labelledby="contact-title">
+        <div><div class="panel-head"><span data-i18n="contactLabel">— 联系</span></div><h2 id="contact-title" data-i18n-html="contactTitle">一起探索一件<em>值得理解的事。</em></h2><p data-i18n="contactBody">带来一篇论文、一个实现细节，或一个越看越有意思的问题。</p></div>
+        <div class="contact-actions"><a class="button-link bright" href="https://github.com/MiaoSIKI" target="_blank" rel="noreferrer" data-i18n="openGithub">打开 GitHub →</a><div><a href="https://github.com/MiaoSIKI" target="_blank" rel="noreferrer">GH</a><a href="https://www.cnblogs.com/miaosiki" target="_blank" rel="noreferrer">Blog</a></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><span>© <span data-year>2026</span> MiaoSIKI · <span data-i18n="crafted">认真制作</span></span><span>v3.0 · <i class="live-dot"></i> live</span></footer>
+  </body>
 </html>
